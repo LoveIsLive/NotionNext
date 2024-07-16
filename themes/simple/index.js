@@ -220,7 +220,7 @@ const LayoutSlug = props => {
   const { post, lock, validPassword, prev, next, recommendPosts } = props
   const { fullWidth } = useGlobal()
 
-    console.error('LayoutSlug', JSON.parse(JSON.stringify(post)));
+    console.error('LayoutSlug', post);
 
   return (
     <>
