@@ -32,7 +32,7 @@ export default function BlogListPage(props) {
     .split('?')[0]
     .replace(/\/page\/[1-9]\d*/, '')
     .replace(/\/$/, '')
-    .replace('.html', '')
+    .replace('.html', '');
 
     console.error('posts', JSON.parse(JSON.stringify(posts)));
 
