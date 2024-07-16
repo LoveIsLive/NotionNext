@@ -34,6 +34,8 @@ export default function BlogListPage(props) {
     .replace(/\/$/, '')
     .replace('.html', '')
 
+  console.error('posts', JSON.parse(JSON.stringify(posts)))
+
   return (
     <div className='w-full md:pr-8 mb-12'>
       <div id='posts-wrapper'>
