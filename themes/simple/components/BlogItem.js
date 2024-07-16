@@ -26,7 +26,7 @@ export const BlogItem = props => {
           {/* 图片封面 */}
           {showPageCover && (
             <div className='overflow-hidden mr-2 w-56 h-full'>
-              <Link href={post.href} passHref legacyBehavior>
+              <Link href={`/${post.href}`} passHref legacyBehavior>
                 <LazyImage
                   src={post?.pageCoverThumbnail}
                   className='w-56 h-full object-cover object-center group-hover:scale-110 duration-500'
@@ -39,7 +39,7 @@ export const BlogItem = props => {
         <article className='article-info'>
           <h2 className='mb-2'>
             <Link
-              href={post.href}
+              href={`/${post.href}`}
               className='blog-item-title font-bold text-black text-2xl menu-link'>
               {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post.pageIcon} />
@@ -114,7 +114,7 @@ export const BlogItem = props => {
 
       <div className='block'>
         <Link
-          href={post.href}
+          href={`/${post.href}`}
           className='inline-block rounded-sm text-blue-600 dark:text-blue-300  text-xs dark:border-gray-800 border hover:text-red-400 transition-all duration-200 hover:border-red-300 h-9 leading-8 px-5'>
           Continue Reading{post.href}
           <i className='fa-solid fa-angle-right align-middle'></i>
