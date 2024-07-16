@@ -24,7 +24,9 @@ export default function BlogListPage(props) {
     'SIMPLE_POST_AD_ENABLE',
     false,
     CONFIG
-  )
+  );
+
+      console.error('posts', JSON.parse(JSON.stringify(posts)));
 
   const showPrev = currentPage > 1
   const showNext = page < totalPage
@@ -33,8 +35,6 @@ export default function BlogListPage(props) {
     .replace(/\/page\/[1-9]\d*/, '')
     .replace(/\/$/, '')
     .replace('.html', '');
-
-    console.error('posts', JSON.parse(JSON.stringify(posts)));
 
   return (
     <div className='w-full md:pr-8 mb-12'>
