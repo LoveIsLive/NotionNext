@@ -220,8 +220,6 @@ const LayoutSlug = props => {
   const { post, lock, validPassword, prev, next, recommendPosts } = props
   const { fullWidth } = useGlobal()
 
-    console.error('LayoutSlug', post);
-
   return (
     <>
       {lock && <ArticleLock validPassword={validPassword} />}
